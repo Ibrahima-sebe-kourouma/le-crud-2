@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\URL;
-URL::forceScheme('https');
+//URL::forceScheme('https');
 
 //returns the home page with all posts
 Route::get('/', PostController::class .'@index')->name('posts.index');
